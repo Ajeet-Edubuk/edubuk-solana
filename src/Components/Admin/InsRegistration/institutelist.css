@@ -1,0 +1,93 @@
+.institute-list-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0px 20px 20px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2),
+  0 10px 10px rgba(26, 188, 156, 0.2); 
+  max-height: 55vh; /* Limit height to 80% of the viewport height */
+  overflow-y: auto; /* Allow vertical scrolling */
+  overflow-x: hidden; /* Optional: hides horizontal scrollbar */
+}
+
+.title {
+  background-color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #006666;
+  position: sticky;
+  border-radius: 10px;
+  top: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #006666; /* Optional: add a bottom border for clarity */
+}
+
+.institute-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.institute-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2),
+  0 10px 10px rgba(26, 188, 156, 0.2); 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.institute-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.institute-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #3498db;
+  margin-right: 10px;
+}
+
+.wallet-address {
+  font-size: 14px;
+  color: #ff8000;
+  word-break: break-word;
+}
+
+.remove-btn {
+  margin-top: 5px;
+  padding: 8px 12px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-btn:hover {
+  background-color: #e60000;
+}
+
+@media (max-width: 768px) {
+  .institute-item {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .remove-btn {
+      margin-top: 10px;
+  }
+
+  .institute-name, .wallet-address {
+      margin-bottom: 5px;
+  }
+}
